@@ -27,7 +27,8 @@ I measured 1-day Value at Risk (VaR) for an equal-weight portfolio of 7 semicond
 - **Diversification:** The portfolio's 99% VaR was 20% lower than the average single stock, but still 2.3x SPY, because semiconductor stocks are highly correlated.
 - **Fat tails:** Parametric VaR matched Historical at 95% (4.29% vs 4.23%) but underestimated 99% VaR by 12% (6.12% vs 6.93%). A Student-t model (df=4) fixed the 99% tail (6.90%).
 - **Backtesting:** Normal VaR failed the Kupiec test at 99% (18 breaches vs 10 expected), and Student-t failed at 95% (79 vs 50). No single model fits every confidence level.
-Return distribution with 95% and 99% VaR Actual returns vs normal distribution
+![Return distribution with 95% and 99% VaR](histogram.png)
+![Actual returns vs normal distribution](fat_tails.png)
 
 ## Notebooks
 
